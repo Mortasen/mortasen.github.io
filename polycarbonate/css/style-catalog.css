@@ -1,0 +1,137 @@
+.dropdown > div {
+  border: none;
+  padding: 15px 0 25px;
+  font-size: 15px;
+}
+
+.dropdown > div > h3 {
+  font-weight: 800;
+  color: #8D8E86;
+  margin: 0;
+}
+
+.dropdown > div > a {
+  text-transform: none;
+  display: block;
+  margin: 6px auto;
+  line-height: 1em;
+  color: #000;
+}
+
+.dropdown > div > hr {
+  width: 100%;
+  margin: 14px 0;
+}
+
+.dropdown > button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.triple-toggle {
+  width: auto;
+  margin: 65px auto;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 800;
+  color: #295200;
+}
+
+.triple-toggle:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.triple-toggle > input.left + label {
+  border-left: 0;
+}
+
+.triple-toggle > label {
+  width: auto;
+  padding: 20px 60px;
+  border-left: 2px solid;
+  border-color: inherit;
+}
+
+header .dropdown > button:hover {
+  background: transparent;
+}
+
+#shop {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#shop > .dropdown, #shop > button {
+  margin: auto;
+}
+
+#shop span.bg-label {
+  display: block;
+  font-size: 70px;
+  font-weight: 900;
+  color: #73C14466;
+  margin: 25px 0;
+}
+
+#shop .items {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 930px;
+  height: auto;
+  margin: auto;
+  font-weight: 500;
+}
+
+#shop .items > .card {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+#shop .items b {
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  #shop .items {
+    width: 80%;
+  }
+}
+
+@media (max-width: 780px) {
+  .triple-toggle > label, #shop > button, .dropdown > button {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .triple-toggle > label, #shop > button, .dropdown > button {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .triple-toggle > label, #shop > button, .dropdown > button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .dropdown > button > span {
+    top: 30%;
+  }
+
+  #shop .items {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .triple-toggle > label, #shop > button, .dropdown > button {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+}

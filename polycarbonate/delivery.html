@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+  <title>Каталог - Сотовый поликарбонат</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-delivery.css">
+  <script src="script.js" async></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="top-panel">
+        <div class="logo">
+          <img src="img/logo.png" alt="РУС ПОЛИК МОНТАЖ">
+          <div>
+            <div class="installation">
+              Монтаж и резка<br>поликарбоната
+            </div>
+            <hr>
+            <div class="clarification">
+              Опт и розница
+            </div>
+          </div>
+        </div>
+        <div class="burger dropdown">
+          <button>
+            <div>
+              <img src="img/burger.png" alt="Меню">
+            </div>
+          </button>
+          <div>
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Услуги</a>
+            <a href="#">Прайс-лист</a>
+            <a href="#">Скидки</a>
+            <a href="#">Доставка</a>
+            <a href="#">Заказ</a>
+          </div>
+        </div>
+        <button class="catalog green-button button-text-img rounded">
+          <div>Каталог</div>
+          <img src="img/icon-details.png" alt="Детали">
+        </button>
+        <input class="search-bar circled" placeholder="Найти  🔍">
+        <div class="cart">
+          <button class="green-button circled">
+            <img src="img/icon-shopping.png" alt="Корзина">
+          </button>
+          <div class="cart-info">
+            <p>В корзине <b>0 товаров</b></p>
+            <p>Сумма: <b>0 рублей</b></p>
+          </div>
+        </div>
+        <div class="call">
+          <button class="green-button button-text-img rounded">
+            <div>Позвонить</div>
+            <img src="img/icon-phone.png" alt="Детали">
+          </button>
+          <b>zakaz@ruspolik.ru</b>
+          <p>г. Москва, ул. Дорожная д. 9А</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная<hr></a></li>
+          <li><a href="#">О нас<hr></a></li>
+          <li><a href="#">Услуги<hr></a></li>
+          <li><a href="#">Прайс-лист<hr></a></li>
+          <li><a href="#">Скидки<hr></a></li>
+          <li><a href="#">Доставка<hr></a></li>
+          <li><a href="#">Заказ<hr></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="delivery">
+    <h1>Доставка</h1>
+    <div class="description">
+      <div class="text">
+        <h2>По Москве и области:</h2>
+        <ul>
+          <li>Доставка по Москве - от 500 рублей + 25 р/км за МКАД до 50 км, далее 35 р/км</li>
+          <li>Курьеры.</li>
+          <li>Легковой транспорт.</li>
+          <li>Доставка по Москве на авто до 1,5т - 1300 рублей.</li>
+          <li>Доставка в центр Москвы в пределы ТТК и Садового кольца на авто до 1,5 т. - 1800 рублей.</li>
+        </ul>
+      </div>
+      <img src="img/delivery.png" alt="Доставка">
+    </div>
+    <br>
+    <form>
+      <h2>Расчет доставки в регионы<span>вашего заказа</span></h2>
+      <div class="data">
+        <div class="data-item">
+          <h3>Откуда:</h3>
+          <input type="text">
+          <div class="checkbox-w-descr">
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1" class="square">✔</label>
+            <label for="checkbox1"><b>Забрать груз у отправителя</b>Пометьте этот пункт если Интернет магазин не доставляет товар до терминала транспортной компании</label>
+          </div>
+        </div>
+        <div class="data-item">
+          <h3>Куда:</h3>
+          <input type="text">
+          <div class="checkbox-w-descr">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2" class="square">✔</label>
+            <label for="checkbox2"><b>Доставка у дверей</b>Обратите внимание у каждой компании могут быть свои условия доставки до дверей</label>
+          </div>
+        </div>
+        <div class="data-item">
+          <h3>Вес, кг:</h3>
+          <input type="text">
+          <div class="checkbox-w-descr">
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3" class="square">✔</label>
+            <label for="checkbox3"><b>Обрешётка</b>Если вам требуется жесткая упаковка груза, то поставьте галочку</label>
+          </div>
+        </div>
+        <div class="data-item">
+          <h3>Объем, м³:</h3>
+          <input type="text">
+          <div class="checkbox-w-descr">
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4" class="square">✔</label>
+            <div>
+              <label for="checkbox4"><b>Страхование</b>Если вам требуется страховка груза, то поставьте галочку</label>
+              <input class="field" type="text" placeholder="Сумма:">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/recaptcha.png" alt="">
+      <div class="checkbox-w-descr">
+        <input type="checkbox" id="checkbox5">
+        <label for="checkbox5" class="square">✔</label>
+        <div>
+          <label for="checkbox5">Отправляя персональные данные из данной формы, я даю согласие на обработку персональных данных</label>
+        </div>
+      </div>
+      <button class="green-button circled">Рассчитать</button>
+      <p>* Стоимость является ориентировочной</p>
+    </form>
+    <img src="img/shape9.svg" alt="">
+    <p>Возможность отправки материала в ваш регион, уточняйте в отделе по работе с региональными клиентами</p>
+  </section>
+  <footer>
+    <div class="gradient"></div>
+    <div class="container">
+      <div>
+        <img class="left" src="img/paysystems.png" alt="" width=320 height=41>
+        <p class="middle">Все права защищены, 2020<br>ПоликМонтаж</p>
+        <p class="right">г. Москва, ул. Дорожная д. 9А<br>+7 (499) 348-18-85</p>
+      </div>
+      <p>Данный сайт носит исключительно информационный характер и ни при каких обстоятельствах не является публичной <br>офертой, определяемой положениями Статьи 437 "Гражданского кодекса РФ"</p>
+    </div>
+  </footer>
+</body>
+</html>

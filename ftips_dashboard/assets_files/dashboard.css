@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 150ms;
+}
+
+a:hover {
+    color: rgb(236, 156, 37);
+}
+
+body {
+    font-weight: 500;
+}
+
+header {
+    padding: 16px 24px;
+    height: 80px;
+
+    box-shadow: none;
+    background-image: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    color: white;
+    background-color: rgb(27, 34, 63);
+    transition: none 0s ease 0s;
+}
+
+header > label {
+    display: none;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: currentcolor none 0px;
+    border: 0px none;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+header > label > div {
+    position: relative;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out 0s;
+    background: rgb(237, 231, 246) none repeat scroll 0% 0%;
+    color: rgb(236, 156, 37);
+}
+
+header > label > div:hover {
+    background: rgb(236, 156, 37) none repeat scroll 0% 0%;
+    color: rgb(237, 231, 246);
+}
+
+header > div > span {
+    vertical-align: middle;
+    margin-right: 24px;
+}
+
+button, a.button {
+    display: inline-block;
+    box-sizing: border-box;
+    outline: currentcolor none 0px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    min-width: 64px;
+    padding: 6px 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 150, 243);
+    border: 0 none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+button:hover, a.button:hover {
+    background-color: rgb(27, 117, 191);
+}
+
+button:active, a.button:active {
+    background-color: rgb(140, 203, 255);
+    color: black;
+}
+
+header > input {
+    display: none;
+}
+
+div.hidden-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+header > input:checked + div.hidden-nav {
+    display: block;
+}
+
+nav {
+    background: rgb(27, 34, 63) none repeat scroll 0% 0%;
+    color: rgb(227, 242, 253);
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 260px;
+    padding: 0 16px;
+    overflow-y: scroll;
+}
+
+nav > ul > span {
+    margin: 10px 0px 0.35em;
+    line-height: 1.66;
+    display: block;
+    color: rgb(251, 233, 231);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 6px;
+    text-transform: capitalize;
+}
+
+nav > ul > a {
+    outline: currentcolor none 0;
+    border: 0px none;
+    margin: 0px 0px 4px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    display: flex;
+    -moz-box-flex: 1;
+    flex-grow: 1;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -moz-box-align: center;
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: left;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 10px 16px 10px 24px;
+    color: rgb(227, 242, 253);
+    border-radius: 12px;
+    align-items: flex-start;
+    background-color: inherit;
+}
+
+nav > ul > a > div.icon {
+    flex-shrink: 0;
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 36px;
+    transition: color 150ms;
+}
+
+nav > ul > a > div.text {
+    flex: 1 1 auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: color 150ms;
+}
+
+nav > ul > a > div.text > p {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: "Roboto", sans-serif;
+    color: inherit;
+}
+
+main {
+    margin-top: 80px;
+    overflow: scroll;
+    background-color: #204;
+    background-color: rgb(18, 25, 54);
+    color: rgb(255, 255, 255);
+    padding: 24px;
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+main > div.container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bubble {
+    width: 100%;
+    border-radius: 12px;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #dc5915, #d59d14) repeat scroll 0% 0%;
+}
+
+.half-bubble {
+    flex-basis: 40%;
+    min-width: 400px;
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #dc5915, #d59d14) repeat scroll 0 0;
+}
+
+.bubble > p.focus {
+    margin: 14px 8px 6px 0;
+    line-height: 1.334em;
+    font-size: 2.125rem;
+}
+
+.bubble > p.description {
+    line-height: 1.334em;
+    font-size: 1rem;
+}
+
+.bubble > div.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 22px;
+}
+
+.bubble > div.icons > div.icon-container {
+    display: inline;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgb(214, 129, 0) none repeat scroll 0% 0%;
+    border-radius: 8px;
+    line-height: 44px;
+}
+
+.bubble > div.icons > div.info {
+    display: none;
+    opacity: 0.7;
+}
+
+.bubble > div.icons > div.info:hover > div {
+    opacity: 1.0;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    color: white;
+    text-align: center;
+}
+
+table thead tr {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #dc5915, #d59d14) repeat scroll 0 0;
+    font-weight: bold;
+}
+
+table tfoot tr {
+    background-color: #D97B1544;
+    font-weight: bold;
+}
+
+table th {
+    padding: 20px 15px;
+    white-space: nowrap;
+}
+
+table td {
+    padding: 16px 8px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #222;
+    background-color: rgb(27, 34, 63);
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: rgb(36, 43, 72);
+}
+
+table tfoot tr:last-of-type {
+    border-bottom: 2px solid #D97B15;
+}
+
+table tbody tr.active-row {
+    font-weight: bold;
+    color: #D97B15;
+}
+
+input[type="checkbox"] {
+    accent-color: #D97B15;
+}
+
+.table-nav {
+    margin: 32px auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.table-nav a {
+    margin: 0 8px;
+    color: #bbb;
+    font-size: 0.7em;
+}
+
+.table-nav a:hover {
+    color: rgb(236, 156, 37);
+}
+
+footer {
+    background-color: grey;
+    height: 5vh;
+}
+
+.icon-button {
+    cursor: pointer;
+}
+
+.code {
+    font-family: monospace;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.half-table {
+    width: 50%;
+    margin: auto;
+}
+
+td.win {
+  color: rgb(32, 255, 32);
+}
+
+td.loss {
+  color: rgb(255, 64, 64);
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+@media (max-width: 800px) {
+    header > img {
+        display: none;
+    }
+
+    header > label {
+        display: block;
+    }
+
+    body > nav {
+        display: none;
+    }
+
+    main {
+        margin-left: 0 !important;
+    }
+
+    .table-nav {
+        font-size: 1.2em;
+    }
+
+    .half-bubble {
+        min-width: 280px;
+    }
+}

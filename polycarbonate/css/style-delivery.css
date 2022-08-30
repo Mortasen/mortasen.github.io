@@ -1,0 +1,235 @@
+.checkbox-w-descr {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.checkbox-w-descr > input[type=checkbox] {
+  display: none;
+}
+
+.checkbox-w-descr > input:checked + .square {
+  color: #000;
+}
+
+.checkbox-w-descr > .square {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  margin-right: 10px;
+  flex-shrink: 0;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: transparent;
+  transition: color 250ms;
+}
+
+.checkbox-w-descr label > b {
+  display: block;
+  font-weight: 600;
+  color: #295200;
+  margin-bottom: 2px;
+}
+
+#delivery {
+  text-align: center;
+}
+
+#delivery > .description {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  width: 54%;
+  -ms-align-items: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#delivery > .description > .text {
+  margin-right: 50px;
+  text-align: left;
+}
+
+#delivery > .description > .text > h2 {
+  color: #295200;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+
+#delivery > .description > .text li {
+  list-style: initial;
+}
+
+#delivery > .description > img {
+  width: 326px;
+  height: 229px;
+}
+
+#delivery > form {
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(73, 145, 0, 0.5);
+  border-radius: 60px;
+  padding: 40px 60px;
+  width: 590px;
+  margin-top: 20px;
+}
+
+#delivery > form > h2 {
+  color: #295200;
+  font-weight: 800;
+}
+
+
+
+#delivery > form > h2 > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#delivery > form > .data {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+#delivery > form > .data > .data-item {
+  width: 46%;
+  margin-bottom: 10px;
+}
+
+#delivery > form h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: #295200;
+
+}
+
+#delivery > form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 100vmax;
+  border: 0;
+  background: #C4C4C4;
+  margin: 5px 0 20px;
+  padding-left: 10px;
+}
+
+#delivery .checkbox-w-descr input.field {
+  display: block;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(73, 145, 0, 0.5);
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: #295200;
+}
+
+#delivery > form > img {
+  display: block;
+  margin: 15px auto 10px;
+}
+
+#delivery > form > .checkbox-w-descr {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  width: 65%;
+  margin: auto;
+}
+
+#delivery > form > button {
+  margin: 25px auto 15px;
+  padding: 8px 20px;
+  box-shadow: 0px 4px 20px rgba(73, 145, 0, 0.8)
+}
+
+#delivery > form > p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+#delivery > img {
+  position: absolute;
+  bottom: 320px;
+  left: 10%;
+  z-index: -1;
+}
+
+#delivery > p {
+  font-size: 10px;
+  font-weight: 30;
+  width: 30%;
+  margin: 45px auto 0;
+}
+
+@media (max-width: 1100px) {
+  #delivery > .description {
+    width: 80%;
+  }
+}
+
+@media (max-width: 720px) {
+  #delivery > .description > img {
+    width: 260px;
+    height: 183px;
+  }
+
+  #delivery > form {
+    width: 90%;
+  }
+
+  #delivery > p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 560px) {
+  #delivery > .description {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  #delivery > .description > .text {
+    display: block;
+    margin: auto;
+  }
+
+  #delivery > .description > .text > h2 {
+    text-align: center;
+  }
+
+  #delivery > .description > img {
+    margin-top: 20px;
+  }
+
+  #delivery > form > .data > .data-item {
+    width: 100%;
+  }
+
+  #delivery > form > .checkbox-w-descr {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  #delivery > form {
+    padding: 20px 30px;
+  }
+}

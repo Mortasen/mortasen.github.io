@@ -1,0 +1,269 @@
+.white-button {
+  box-shadow: none;
+  padding: 13px 35px;
+}
+
+.white-button:hover {
+  box-shadow: none;
+}
+
+.dropdown > button > span {
+  top: 25%;
+  right: 10%;
+}
+
+#item-card {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#item-card > * {
+  display: block;
+  margin: auto;
+}
+
+#item-card > .dropdown {
+  margin: 40px auto;
+}
+
+#item-card > .dropdown > div {
+  border: none;
+  padding: 15px 0 25px;
+  font-size: 15px;
+}
+
+#item-card > .dropdown > div > h3 {
+  font-weight: 800;
+  color: #8D8E86;
+  margin: 0;
+}
+
+#item-card > .dropdown > div > a {
+  text-transform: none;
+  display: block;
+  margin: 6px auto;
+  line-height: 1em;
+  color: #000;
+}
+
+#item-card > .dropdown > div > hr {
+  width: 100%;
+  margin: 14px 0;
+}
+
+#item-card > h1 {
+  text-transform: none;
+}
+
+#item-card > .chars {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 800px;
+  height: 535px;
+  flex-flow: column wrap;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 60px auto;
+  padding: 0 70px;
+}
+
+#item-card > .chars > .c-direction {
+  margin: 35px 0 20px;
+}
+
+#item-card > .chars > p.use {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  width: 315px;
+  padding-right: 45px;
+}
+
+#item-card > .chars > p {
+  margin: 1px 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#item-card > .chars > p > b {
+  display: block;
+  font-weight: 700;
+}
+
+#item-card > .chars > .dropdown {
+  margin-top: 22px;
+}
+
+#item-card > .chars > p.price {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+#item-card > .chars > p.price > b {
+  display: inline;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+#item-card > .buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: auto;
+  width: 660px;
+  justify-content: space-between;
+}
+
+#catalog {
+  display: inline-block;
+  position: absolute;
+  overflow: visible;
+  top: 100px;
+  left: 0px;
+  width: 400px;
+  z-index: 2;
+  padding: 0;
+  transform: scale(0.6) translateY(-32%) translateX(-15%);
+}
+
+#catalog > .container {
+  padding: 0;
+}
+
+#catalog .catalog {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#catalog .catalog > button.left {
+  left: -70px;
+}
+
+#catalog .catalog > button.right {
+  right: -70px;
+}
+
+#catalog .buttons {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-bottom: 0;
+}
+
+#catalog .buttons > button {
+  margin: auto;
+  margin-top: 20px;
+}
+
+#catalog .buttons > button:last-child {
+  margin-right: auto;
+}
+
+#catalog .catalog > div {
+  min-width: 200px;
+}
+
+#popular > .container {
+  padding: 0;
+  padding-bottom: 200px;
+}
+
+#item-card, #popular {
+  margin-right: auto;
+  margin-left: 20%;
+}
+
+@media (max-width: 1100px) {
+  #catalog {
+    transform: scale(0.6) translateY(-30%) translateX(-40%);
+  }
+
+  #item-card, #popular {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #catalog {
+    display: block;
+    position: static;
+    margin: auto;
+    width: 100%;
+    padding: 70px 0 40px;
+    padding-top: 0;
+  }
+
+  #popular > .container {
+    padding-bottom: 0;
+  }
+
+  #item-card, #popular {
+    margin: auto;
+  }
+
+  #catalog {
+    transform: none;
+  }
+
+  #catalog .catalog > div {
+    min-width: 305px;
+  }
+}
+
+@media (max-width: 800px) {
+  #item-card > .chars {
+    width: 90%;
+    height: auto;
+    padding: 0;
+  }
+
+  #item-card > .chars > p.use {
+    text-align: center;
+    width: auto;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+
+  #item-card > .buttons {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+
+  #item-card > .buttons > button {
+    margin-bottom: 50px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 420px) {
+  #item-card > .buttons > button {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+  }
+
+  #item-card > .chars > img {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 350px) {
+  #item-card > .chars {
+    width: 100%;
+  }
+  #item-card > .chars > img {
+    transform: scale(0.6);
+  }
+}

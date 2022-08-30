@@ -1,0 +1,133 @@
+.white-button {
+  box-shadow: none;
+  padding: 13px 35px;
+}
+
+.white-button:hover {
+  box-shadow: none;
+}
+
+#cart {
+  text-align: center;
+  font-size: 40px;
+  padding: 75px 0 25px;
+}
+
+#cart .items {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+#cart .items > div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  background: #C4C4C4B2;
+  padding: 22px;
+  padding-right: 55px;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+#cart p {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 45px;
+}
+
+#cart p > b {
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+#cart > button {
+  margin: 45px auto 55px;
+}
+
+#cart > .buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: auto;
+  width: 660px;
+  justify-content: space-between;
+}
+
+#cart > img {
+  position: absolute;
+  top: 74px;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 760px) {
+  #cart {
+    font-size: 30px;
+  }
+
+  #cart > .buttons {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+
+  #cart > .buttons > button {
+    margin-bottom: 50px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 660px) {
+  #cart {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  #cart .items {
+    -ms-align-items: center;
+    align-items: center;
+  }
+  #cart .items > div {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 22px;
+    width: 80%;
+  }
+
+  #cart > p > b {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  #cart .items {
+    width: 90%;
+  }
+
+  #cart > .buttons > button {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+  }
+}

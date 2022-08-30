@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <title>РУСполик Монтаж - Монтаж и резка поликарбоната. Опт и розница</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" async></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="top-panel">
+        <div class="logo">
+          <img src="img/logo.png" alt="РУС ПОЛИК МОНТАЖ">
+          <div>
+            <div class="installation">
+              Монтаж и резка<br>поликарбоната
+            </div>
+            <hr>
+            <div class="clarification">
+              Опт и розница
+            </div>
+          </div>
+        </div>
+        <div class="burger dropdown">
+          <button>
+            <div>
+              <img src="img/burger.png" alt="Меню">
+            </div>
+          </button>
+          <div>
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Услуги</a>
+            <a href="#">Прайс-лист</a>
+            <a href="#">Скидки</a>
+            <a href="#">Доставка</a>
+            <a href="#">Заказ</a>
+          </div>
+        </div>
+        <button class="catalog green-button button-text-img rounded" onclick="window.location.href='catalog.html'">
+          <div>Каталог</div>
+          <img src="img/icon-details.png" alt="Детали">
+        </button>
+        <input class="search-bar circled" placeholder="Найти  🔍">
+        <div class="cart">
+          <button class="green-button circled">
+            <img src="img/icon-shopping.png" alt="Корзина">
+          </button>
+          <div class="cart-info">
+            <p>В корзине <b>0 товаров</b></p>
+            <p>Сумма: <b>0 рублей</b></p>
+          </div>
+        </div>
+        <div class="call">
+          <button class="green-button button-text-img rounded">
+            <div>Позвонить</div>
+            <img src="img/icon-phone.png" alt="Детали">
+          </button>
+          <b>zakaz@ruspolik.ru</b>
+          <p>г. Москва, ул. Дорожная д. 9А</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная<hr></a></li>
+          <li><a href="#">О нас<hr></a></li>
+          <li><a href="#">Услуги<hr></a></li>
+          <li><a href="#">Прайс-лист<hr></a></li>
+          <li><a href="#">Скидки<hr></a></li>
+          <li><a href="#">Доставка<hr></a></li>
+          <li><a href="#">Заказ<hr></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="first">
+    <div class="popup" id="general-form-popup" onclick="popupClose(this);">
+      <form>
+        <h2>Оставить заявку</h2>
+        <label>Ваш телефон:</label>
+        <input type="text">
+        <label>Ваш email:</label>
+        <input type="text">
+        <label>Ваше сообщение:</label>
+        <input type="text" class="big">
+        <div class="agreement">
+          <input type="checkbox" id="pd-agreement-manager">
+          <label for"pd-agreement-manager">Отправляя персональные данные из данной формы, я даю согласие на обработку персональных данных</label>
+        </div>
+        <img src="img/recaptcha.png" alt="">
+        <button class="green-button circled">Отправить</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="main-block">
+        <h1 class="green-text-shadow">
+          Качественный поликарбонат<br><span>во все регионы РФ</span>
+        </h1>
+        <p>по вашему размеру</p>
+        <div>
+          <button class="green-button rounded" onclick="window.location.href='catalog.html'">Перейти к каталогу</button>
+          <button class="white-button rounded" onclick="popupOpen('general');">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+    <div class="figure">
+      <img class="shape" src="img/shape1.svg" alt="">
+      <img class="shape-full" src="img/shape7.svg" alt="">
+      <img class="polycarbonate" src="img/polycarbonate.png" alt="Поликарбонат">
+    </div>
+  </section>
+  <section id="application">
+    <div class="container">
+      <h1>Оставить заявку</h1>
+      <form action="">
+        <div>
+          <div class="label">
+            <h2>Тип поликарбоната:</h2>
+          </div>
+          <div class="white-button toggle">
+            <input type="radio" name="radio1" id="toggle-left-1" checked>
+            <label for="toggle-left-1">СОТОВЫЙ</label><input type="radio" name="radio1" id="toggle-right-1"><label for="toggle-right-1">МОНОЛИТНЫЙ</label>
+          </div>
+        </div>
+        <div>
+          <div class="label">
+            <h2>Цвет поликарбоната:</h2>
+          </div>
+          <div class="color-choose">
+            <input type="radio" name="color-choose" value="none" id="pc-color-none">
+            <label for="pc-color-none"></label>
+            <input type="radio" name="color-choose" value="grey" id="pc-color-grey">
+            <label for="pc-color-grey"></label>
+            <input type="radio" name="color-choose" value="brown" id="pc-color-brown">
+            <label for="pc-color-brown"></label>
+            <input type="radio" name="color-choose" value="blue" id="pc-color-blue">
+            <label for="pc-color-blue"></label>
+            <input type="radio" name="color-choose" value="green" id="pc-color-green">
+            <label for="pc-color-green"></label>
+            <input type="radio" name="color-choose" value="beige" id="pc-color-beige">
+            <label for="pc-color-beige"></label>
+            <input type="radio" name="color-choose" value="yellow" id="pc-color-yellow">
+            <label for="pc-color-yellow"></label>
+            <input type="radio" name="color-choose" value="red" id="pc-color-red">
+            <label for="pc-color-red"></label>
+            <input type="radio" name="color-choose" value="orange" id="pc-color-orange">
+            <label for="pc-color-orange"></label>
+            <input type="radio" name="color-choose" value="cyan" id="pc-color-cyan">
+            <label for="pc-color-cyan"></label>
+          </div>
+        </div>
+        <div>
+          <div class="label">
+            <h2>Применение:</h2>
+          </div>
+          <div class="dropdown">
+            <button type="button">
+              <div>
+                Выберите применение
+              </div>
+              <span>▼</span>
+            </button>
+            <div>
+              <button type='button' onclick="dropdownChange(this);">Применение 1</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">Применение 2</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">Применение 3</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">Применение 4</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="label">
+            <h2>Толщина<br>поликарбоната, мм:</h2>
+          </div>
+          <div class="dropdown">
+            <button type="button">
+              <div>
+                Выберите толщину
+              </div>
+              <span>▼</span>
+            </button>
+            <div>
+              <button type='button' onclick="dropdownChange(this);">2мм</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">3мм</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">5мм</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="label">
+            <h2>Плотность<br>поликарбоната, кг/м²:</h2>
+          </div>
+          <div class="dropdown">
+            <button type="button">
+              <div>
+                Выберите плотность
+              </div>
+              <span>▼</span>
+            </button>
+            <div>
+              <button type='button' onclick="dropdownChange(this);">150 кг/м²</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">200 кг/м²</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">250 кг/м²</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">300 кг/м²</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">400 кг/м²</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="label">
+            <h2>Размер листов:</h2>
+          </div>
+          <div class="dropdown">
+            <button type="button">
+              <div>
+                Выберите размер
+              </div>
+              <span>▼</span>
+            </button>
+            <div>
+              <button type='button' onclick="dropdownChange(this);">2x3 м</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">2x5 м</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">3x3 м</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">3x5 м</button>
+              <hr>
+              <button type='button' onclick="dropdownChange(this);">4x4 м</button>
+            </div>
+          </div>
+        </div>
+        <div class="button-wo-label">
+          <div class="label">
+            <h2></h2>
+          </div>
+          <div class="white-button-symbol">
+            <button type='button' onclick="addSize();">
+              <div>
+                Добавить размер
+              </div>
+              <span>+</span>
+            </button>
+          </div>
+        </div>
+        <div class="size">
+          <h2>Группа листов 1:</h2>
+          <button type=button onclick="removeSize(this);"><img src="img/close.svg" alt="Удалить" width=32 height=32></button>
+          <div class="size-fields">
+            <div>
+              <h3>Ширина</h3>
+              <input type="text">
+            </div>
+            <div>
+              <h3>Длина</h3>
+              <input type="text">
+            </div>
+            <div>
+              <h3>Количество</h3>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+        <!-- Место для вставки новых размеров -->
+        <div class="summary">
+          ВСЕГО: <b>.. м² .. кг</b> 00 000 руб.
+        </div>
+        <button class="green-button rounded">
+          Оставить заявку
+        </button>
+      </form>
+    </div>
+    <img src="img/shape2.svg" alt="" width=543>
+  </section>
+  <section id="catalog">
+    <div class="container">
+      <h1>Каталог услуг</h1>
+      <div class="buttons">
+        <button class="circled green-button">Продажа листов поликарбоната</button>
+        <button class="circled white-button">Монтажные работы</button>
+      </div>
+      <button class="arrow left" onclick="catalogPrevPage();"><img src="img/icon-chevron.png" alt="Влево"></button>
+      <button class="arrow right" onclick="catalogNextPage();"><img src="img/icon-chevron.png" alt="Влево"></button>
+
+      <div class="catalog catalog-hidden" id="catalog-page-1">
+        <!--
+          (div>div.card>(div>img[src=img/polyc-type-$.png])+div.bottombar>div.cardname+div.green-arrow-button)*8-->
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog" id="catalog-page-2">
+        <!--
+          (div>div.card>(div>img[src=img/polyc-type-$.png])+div.bottombar>div.cardname+div.green-arrow-button)*8-->
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-1.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Сотовый поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card ltimg">
+            <div><img src="img/polyc-type-2.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Монолитный поликарбонат</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-3.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Теплицы из поликарбоната</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-4.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Навес для автомобиля</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-5.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Козырьки из поликарбоната</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-6.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Беседки из поликарбоната</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-7.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Забор из поликарбоната</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-8.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Комплектующие</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog catalog-hidden" id="catalog-page-3">
+        <!--
+          (div>div.card>(div>img[src=img/polyc-type-$.png])+div.bottombar>div.cardname+div.green-arrow-button)*8-->
+
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-8.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Комплектующие</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-8.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Комплектующие</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-8.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Комплектующие</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-8.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Комплектующие</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div><img src="img/polyc-type-8.png" alt=""></div>
+            <div class="bottombar">
+              <div class="cardname">Комплектующие</div>
+              <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <button class="green-button rounded" onclick="popupOpen('general');">
+      Оставить заявку
+    </button>
+  </section>
+  <section id="popular">
+    <div class="container">
+      <h1>Популярные товары</h1>
+      <div class="popular-list">
+        <div class="card">
+          <div><img src="" alt=""></div>
+          <div class="bottombar">
+            <div class="cardname">ТОВАР<br><b>0000 руб</b></div>
+            <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><img src="" alt=""></div>
+          <div class="bottombar">
+            <div class="cardname">ТОВАР<br><b>0000 руб</b></div>
+            <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="card">
+          <div><img src="" alt=""></div>
+          <div class="bottombar">
+            <div class="cardname">ТОВАР<br><b>0000 руб</b></div>
+            <button class="green-arrow-button"><img src="img/arrow.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="green-button rounded" onclick="popupOpen('general');">
+      Оставить заявку
+    </button>
+  </section>
+  <section id="choice">
+    <div class="container">
+      <div class="content">
+        <h1>Тяжело сделать выбор?</h1>
+        <p>Поможем с подбором материала и произведем предварительный расчет будущего заказа</p>
+        <div class="helpers">
+          <div>
+            <p>Консультация<br>менеджера</p>
+            <button class="white-button rounded" onclick="popupOpen('manager');">Оставить заявку</button>
+          </div>
+          <div>
+            <p>Вызов<br>инженера</p>
+            <button class="white-button rounded" onclick="popupOpen('engineer');">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="left-shape" src="img/shape3.svg" alt="">
+    <img class="left-person" src="img/manager.png" alt="">
+    <img class="right-shape" src="img/shape4.svg" alt="">
+    <img class="right-person" src="img/engineer.png" alt="">
+    <div class="popup" id="manager-form-popup" onclick="popupClose(this);">
+      <form>
+        <h2>Оставить заявку</h2>
+        <p>на консультацию менеджера</p>
+        <label>Ваш телефон:</label>
+        <input type="text">
+        <label>Ваш email:</label>
+        <input type="text">
+        <label>Ваше сообщение:</label>
+        <input type="text" class="big">
+        <div class="agreement">
+          <input type="checkbox" id="pd-agreement-manager">
+          <label for"pd-agreement-manager">Отправляя персональные данные из данной формы, я даю согласие на обработку персональных данных</label>
+        </div>
+        <img src="img/recaptcha.png" alt="">
+        <button class="green-button circled">Отправить</button>
+      </form>
+    </div>
+    <div class="popup" id="engineer-form-popup" onclick="popupClose(this);">
+      <form>
+        <h2>Оставить заявку</h2>
+        <p>на вызов инженера</p>
+        <label>Ваш телефон:</label>
+        <input type="text">
+        <label>Ваш email:</label>
+        <input type="text">
+        <label>Ваше сообщение:</label>
+        <input type="text" class="big">
+        <div class="agreement">
+          <input type="checkbox" id="pd-agreement-manager">
+          <label for"pd-agreement-manager">Отправляя персональные данные из данной формы, я даю согласие на обработку персональных данных</label>
+        </div>
+        <img src="img/recaptcha.png" alt="">
+        <button class="green-button circled">Отправить</button>
+      </form>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h1>О нашей компании</h1>
+      <div class="about">
+        <div class="text">
+          <p>Продукция заводов представлена в крупнейших строительных сетях и торговых компаниях не только на территории РФ, но и других странах по всему миру. Наша компания имеет широкую линейку поликарбоната и предлагает своим клиентам возможность выбора исходя из потребностей и задач. Отдел по работе с клиентами нашей организации предлагает для своих клиентов выезды представителей на ваши объекты с образцами поликарбоната.</p>
+        </div>
+        <div class="figure-border">
+          <div class="figure">
+            <img src="img/polyc-list.png" alt="Лист поликарбоната">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="advantages">
+    <div class="container">
+      <h1>Каковы наши<br>преимущества?</h1>
+      <div class="advantages">
+        <div>
+          <div class="advantage">
+            <div class="img"><img src="img/icon-ruler.png" alt=""></div>
+            <p>У нас широкая линейка поликарбоната. Мы предлагаем своим клиентам возможность выбора исходя из потребностей и задач</p>
+          </div>
+        </div>
+        <div>
+          <div class="advantage">
+            <div class="img"><img src="img/icon-maintenance.png" alt=""></div>
+            <p>Отдел по работе с клиентами нашей организации предлагает для своих клиентов выезды представителей на ваши объекты с образцами поликарбоната</p>
+          </div>
+        </div>
+        <div>
+          <div class="advantage">
+            <div class="img"><img src="img/icon-delivery.png" alt=""></div>
+            <p>Самостоятельно доставляем приобретенный товар клиентам в удобное для них время</p>
+          </div>
+        </div>g
+        <div>
+          <div class="advantage">
+            <div class="img"><img src="img/icon-quality.png" alt=""></div>
+            <p>Своим клиентам мы предлагаем только качественную продукцию</p>
+          </div>
+        </div>
+        <div>
+          <div class="advantage">
+            <div class="img"><img src="img/icon-consultation.png" alt=""></div>
+            <p>Предоставляем высококвалифицированную консультацию опытных менеджеров</p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="circled green-button" onclick="popupOpen('general');">Оставить заявку</button>
+        <button class="circled white-button" onclick="window.location.href='catalog.html'" >Перейти к каталогу</button>
+      </div>
+    </div>
+    <img src="img/shape5.svg" alt="">
+  </section>
+  <section id="price-list">
+    <div class="container">
+      <h1>Прайс-лист</h1>
+      <div class="content">
+        <div class="figure">
+          <img src="img/shape6.svg" alt="">
+          <img src="img/price-list.png" alt="Прайс-лист">
+        </div>
+        <div class="text">
+          <p>Размеры и стоимость поликарбоната стандартных листов от РусПолик. Цена зависит от типа материала по плотности и толщине листа. Своим клиентам мы предлагаем большую линейку размерного ряда поликарбоната.</p>
+          <p>Сотовый поликарбонат размеры (м):<br><b> 2.1x1; 2.1х2; 2.1х3; 2.1х5; 2.1х6; 2.1x7; 2.1x9; 2.1x12 и др.</b>
+          <br>Монолитный поликарбонат размеры (м): <br><b>1x1; 2x1; 3x1; 2x2; 1.5x2; 3x2 и др.</b></p>
+          <button class="rounded white-button">Скачать<br>прайс-лист</button>
+          <button class="rounded green-button" onclick="popupOpen('general');">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="gradient"></div>
+    <div class="container">
+      <div>
+        <img class="left" src="img/paysystems.png" alt="" width=320 height=41>
+        <p class="middle">Все права защищены, 2020<br>ПоликМонтаж</p>
+        <p class="right">г. Москва, ул. Дорожная д. 9А<br>+7 (499) 348-18-85</p>
+      </div>
+      <p>Данный сайт носит исключительно информационный характер и ни при каких обстоятельствах не является публичной <br>офертой, определяемой положениями Статьи 437 "Гражданского кодекса РФ"</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div id="logo-div">
+          <img src="img/logo.png">
+        </div>
+        <nav>
+          <a href="">Авто с пробегом</a>
+          <a href="">Renault</a>
+          <a href="">Сервис Renault</a>
+          <a href="">Nissan</a>
+          <a href="">Сервис Nissan</a>
+          <a href="">Акции</a>
+          <a href="">Грузоперевозки</a>
+          <a href="">Помощь на дороге</a>
+          <a href="">О нас</a>
+        </nav>
+        <div class="buttons">
+          <a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+          +7 (499) 70-70-977
+          <a href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <img id="call" src="img/call.png">
+      <h1> ВЫБЕРИ СВОЙ АВТОМОБИЛЬ </h1>
+      <h3> АВТОМОБИЛИ С ПРОБЕГОМ В НАЛИЧИИ </h3>
+      <section id="carousel">
+        <img class="arrow prev" src="img/arrow.png">
+        <div class="gallery">
+          <ul class="images">
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+            <li>
+              <div>
+                <img src="img/toyota.png" alt="">
+              </div>
+              <p>От 500 000</p>
+            </li>
+          </ul>
+        </div>
+        <img class="arrow next" src="img/arrow.png">
+      </section>
+      <section id="form" class="panel">
+        <div>
+          <div>
+            <input placeholder="Модель" style="width: 380px;">
+          </div>
+          <div style="width: 240px; margin-left: 40px;">
+            <input placeholder="Кузов">
+          </div>
+          <div style="width: 180px; margin-left: 20px;">
+            <p>Год</p>
+            <input placeholder="1980">
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div style="width: 180px;">
+            <input placeholder="2021">
+          </div>
+          <div class="form_toggle" style="margin-left: 24px">
+          	<div class="form_toggle-item item-1">
+          		<input id="fid-1" type="radio" name="radio" value="off" checked>
+          		<label for="fid-1">автомат</label>
+          	</div>
+          	<div class="form_toggle-item item-2">
+          		<input id="fid-2" type="radio" name="radio" value="on">
+          		<label for="fid-2">механика</label>
+          	</div>
+          </div>
+        </div>
+        <div>
+          <div class="form_toggle" style="width: 380px; flex-grow: 0;">
+          	<div class="form_toggle-item item-1">
+          		<input id="fid-3" type="radio" name="radio2" value="off" checked>
+          		<label for="fid-3">дизель</label>
+          	</div>
+          	<div class="form_toggle-item item-2">
+          		<input id="fid-4" type="radio" name="radio2" value="on">
+          		<label for="fid-4">бензин</label>
+          	</div>
+          </div>
+          <div style="width: 240px; margin-left: 40px;">
+            <p>Объём двигателя</p>
+            <input placeholder="1.3">
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div style="width: 240px;">
+            <input placeholder="2.3">
+          </div>
+          <div style="width: 240px; margin-left: 40px;">
+            <p>Мощность</p>
+            <input placeholder="100">
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div style="width: 240px;">
+            <input placeholder="700">
+          </div>
+        </div>
+        <div>
+          <div>
+            <input placeholder="Привод" style="width: 380px;">
+          </div>
+          <div style="width: 240px; margin-left: 40px;">
+            <p>Пробег</p>
+            <input placeholder="от">
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div style="width: 240px;">
+            <input placeholder="до">
+          </div>
+          <div style="width: 240px; margin-left: 40px;">
+            <p>Цена</p>
+            <input placeholder="от">
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div style="width: 240px;">
+            <input placeholder="до">
+          </div>
+        </div>
+        <a href="#">Показать 1 тыс. объявлений</a>
+      </section>
+      <section id="content-blocks">
+        <div>
+          <img src="img/figure1.png">
+          <div>
+            <h2>Оригинальные запчасти</h2>
+            <p>
+              Являясь всего лишь частью общей картины, диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям.
+            </p>
+            <a class="more rb-corner"><img src="img/arrow.png"></a>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h2>Диагностика автомобиля</h2>
+            <p>
+              Являясь всего лишь частью общей картины, диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям.
+            </p>
+            <a class="more lb-corner"><img src="img/arrow.png"></a>
+          </div>
+          <img src="img/figure2.png">
+        </div>
+        <div>
+          <img src="img/figure3.png">
+          <div>
+            <h2>Кузовной ремонт</h2>
+            <p>
+              Являясь всего лишь частью общей картины, диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям.
+            </p>
+            <a class="more rb-corner"><img src="img/arrow.png"></a>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h2>Техническое обслуживание</h2>
+            <p>
+              Являясь всего лишь частью общей картины, диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям.
+            </p>
+            <a class="more lb-corner"><img src="img/arrow.png"></a>
+          </div>
+          <img src="img/figure4.png">
+        </div>
+        <div>
+          <img src="img/figure5.png">
+          <div>
+            <h2>Слесарный ремонт</h2>
+            <p>
+              Являясь всего лишь частью общей картины, диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть ассоциативно распределены по отраслям.
+            </p>
+            <a class="more rb-corner"><img src="img/arrow.png"></a>
+          </div>
+        </div>
+      </section>
+      <div id="bonus" class="panel">
+        <h1>Петров Максим Иванович</h1>
+        <div id="account">
+          <img src="img/carstripecomplete.png">
+          <div id="balance">
+            <span>Ваш текущий баланс:</span>
+            <span class="emphasized">1200</span>
+            <span>баллов<span/>
+          </div>
+          <div id="withdraws">
+            <h4>Ближайшие списания баллов</h4>
+            <div>
+              <span>11.11.2020</span>
+              <span>5000</span>
+            </div>
+            <hr>
+            <div>
+              <span>11.11.2020</span>
+              <span>5000</span>
+            </div>
+          </div>
+        </div>
+        <h2>На что можно потратить баллы</h2>
+        <div id="examples">
+          <div>
+            <img src="img/example1.png" alt="">
+            <p>Сервис Renault</p>
+            <p>Акция</p>
+          </div>
+          <div>
+            <img src="img/example2.png" alt="">
+            <p>Сервис Renault</p>
+            <p>Акция</p>
+          </div>
+          <div>
+            <img src="img/example3.png" alt="">
+            <p>Сервис Renault</p>
+            <p>Акция</p>
+          </div>
+          <div>
+            <img src="img/example4.png" alt="">
+            <p>Сервис Renault</p>
+            <p>Акция</p>
+          </div>
+          <div>
+            <img src="img/example5.png" alt="">
+            <p>Сервис Renault</p>
+            <p>Акция</p>
+          </div>
+          <div>
+            <img src="img/example6.png" alt="">
+            <p>Сервис Renault</p>
+            <p>Акция</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h2>Авангард Моторс - Ваш правильный выбор!</h2>
+      <div>
+        <div id="main-info">
+          <p>ГК «Авангард Моторс» 1996 г.</p>
+          <p>+7 (499) 70-70-977</p>
+          <p class="floated-left">Жуковское шоссе, д.1</p>
+          <p class="floated-right">Ежедневно с 9:00 до 21:00</p>
+        </div>
+        <div id="socials">
+          <img src="img/facebook-icon.png" alt="">
+          <img src="img/vk-icon.png" alt="">
+          <img src="img/twitter-icon.png" alt="">
+          <img src="img/instagram-icon.png" alt="">
+        </div>
+        <div id="links">
+          <a>Официальный диллер Nissan</a>
+          <a>Официальный диллер Renault</a>
+          <a>Автомобили с пробегом</a>
+          <a>Сервис и запчасти</a>
+          <a>Сервис и запчасти</a>
+          <a>Эвакуация и техпомощь на дороге</a>
+          <a>Интернет-магазин автозапчастей</a>
+          <a>Сервис "Минута"</a>
+          <a>Грузоперевозки</a>
+        </div>
+        <p>
+          Реклама. Не является публичной офертой. Изображения могут отличаться от серийных моделей. ООО «Авангард Моторс» приложит все усилия, чтобы обеспечить точность и актуальность данных, содержащихся на Сайте, однако не несет никакой ответственности в отношении любых претензий или убытков, понесенных в связи с использованием информаци, размещенный на Сайте. ООО «Авангард Моторс» оставляет за собой право в любое время вносить изменения в цены, перечень и спецификацию продуктов. Для получения действительной информации просим обращаться к менеджерам автоцентров «Авангард Моторс».
+        </p>
+      </div>
+      <img src="img/map.png">
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

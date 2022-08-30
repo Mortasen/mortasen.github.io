@@ -1,0 +1,1627 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+header, section, footer {
+  position: relative;
+  overflow: hidden;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: block;
+  font-family: 'Montserrat';
+  text-align: center;
+  vertical-align: middle;
+  border: 0;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: background 500ms;
+}
+
+input {
+  font-family: 'Montserrat';
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+p {
+  margin: 3px;
+}
+
+b {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #5B5B5B;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 40px;
+  font-weight: 800;
+  color: #295200;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 30px rgba(78, 51, 153, 0.5);
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 800;
+  color: #000;
+}
+
+.container {
+  padding: 0 195px;
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 30px;
+}
+
+.circled {
+  border-radius: 100vmax;
+}
+
+.green-button {
+  color: #fff;
+  background: #7EC337;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.green-button:hover {
+  background: #6EB327;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.white-button {
+  border: 2px solid #73C144;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.white-button:hover {
+  background: #eee;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.button-text-img {
+  display: flex;
+  align-items: center;
+}
+
+.green-text-shadow {
+  text-shadow: 4px 4px 30px rgba(73, 145, 0, 0.8);
+}
+
+.card {
+  width: 250px;
+  height: 290px;
+  margin: auto;
+  background: #FFFFFF;
+  border: 1px solid rgba(78, 51, 153, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  transition: transform 500ms;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card > div {
+  position: relative;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > .bottombar {
+  height: 30%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+}
+
+.card > .bottombar > .cardname {
+  width: 80%;
+  text-align: left;
+}
+
+.card > .bottombar > .green-arrow-button {
+  width: 43px;
+  height: 43px;
+  border-radius: 100vmax;
+  padding: 0;
+  background: linear-gradient(180deg, #73C144 26.25%, #A6FF4B 100%);
+}
+
+.card > .bottombar > .green-arrow-button > img {
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+}
+
+.card.ltimg > div > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+/* Toggle */
+
+.toggle {
+  display: inline-block;
+  width: 410px;
+  border-radius: 100vmax;
+  transition: all 500ms;
+  padding: 0;
+}
+
+.toggle > input {
+  display: none;
+}
+
+.toggle > label {
+  display: inline-block;
+  height: 100%;
+  padding: 20px;
+  width: 49%;
+  transition: color 250ms;
+}
+
+.toggle > label:last-child {
+  border-left: 2px solid;
+  border-color: inherit;
+}
+
+.toggle > input:checked + label {
+  color: #73C144;
+}
+
+
+
+/* Color choose */
+
+.color-choose input {
+  display: none;
+}
+
+.color-choose label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: border 250ms;
+}
+
+.color-choose input:checked + label {
+  border: 4px solid #65C800;
+}
+
+.color-choose label[for="pc-color-none"] {
+  border: 2px solid black;
+}
+
+.color-choose label[for="pc-color-grey"] {
+  background-color: grey;
+}
+
+.color-choose label[for="pc-color-brown"] {
+  background-color: brown;
+}
+
+.color-choose label[for="pc-color-blue"] {
+  background-color: blue;
+}
+
+.color-choose label[for="pc-color-green"] {
+  background-color: green;
+}
+
+.color-choose label[for="pc-color-beige"] {
+  background-color: beige;
+}
+
+.color-choose label[for="pc-color-yellow"] {
+  background-color: yellow;
+}
+
+.color-choose label[for="pc-color-red"] {
+  background-color: red;
+}
+
+.color-choose label[for="pc-color-orange"] {
+  background-color: orange;
+}
+
+.color-choose label[for="pc-color-cyan"] {
+  background-color: cyan;
+}
+
+
+
+/* Dropdown */
+
+.dropdown {
+  width: 280px;
+  position: relative;
+  text-transform: none;
+}
+
+.dropdown > button {
+  width: 100%;
+  background-color: white;
+  border: 2px solid #78ab4d;
+  border-radius: 100vmax;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1em;
+}
+
+.dropdown button > div {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.dropdown > button > span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown > div {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  border: 2px solid #78ab4d;
+  border-radius: 21px;
+  background: #DFFECC;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms, visibility 250ms;
+}
+
+.dropdown > div > button {
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.dropdown > div > button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown > div > hr {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.dropdown button:focus + div {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* white-button-symbol */
+
+.white-button-symbol {
+  width: 235px;
+  position: relative;
+  text-transform: none;
+}
+
+.white-button-symbol > button {
+  width: 100%;
+  background-color: white;
+  border: 2px solid #78ab4d;
+  border-radius: 100vmax;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1em;
+}
+
+.white-button-symbol button > div {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.white-button-symbol > button > span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/******************************
+/* Стили для отдельных блоков *
+/******************************/
+
+header {
+  padding-top: 19px;
+}
+
+header .rounded {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px;
+}
+
+header .top-panel {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+header .top-panel > .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .top-panel > .logo > div {
+  width: auto;
+  margin-left: 12px;
+  color: #295200;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header .top-panel > .logo > div > .installation {
+  font-size: 12px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .top-panel > .logo > div > hr {
+  margin: 2px 0;
+  border: 1px solid #7EC337;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .top-panel > .logo > div > .clarification {
+  font-size: 10px;
+  color: #73C144;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .top-panel > .burger {
+  background: transparent;
+  display: none;
+  flex-basis: 30%;
+  flex-shrink: 0;
+  order: 5;
+}
+
+header .top-panel > .burger > button {
+  border: none;
+  padding-right: 0;
+}
+
+header .top-panel > .burger > button > div {
+  margin-right: 0;
+  display: fixed;
+}
+
+header .top-panel > .burger > button > div > img {
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+header .top-panel > .catalog {
+  height: 45px;
+  padding: 7.5px 18px 7.5px 23px;
+  order: 10;
+}
+
+header .top-panel > .catalog > img {
+  height: 30px;
+  margin-left: 12px;
+}
+
+header .top-panel > .search-bar {
+  height: 45px;
+  width: 219px;
+  border: 0;
+  background: #C4C4C4;
+  padding-left: 34px;
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  order: 15;
+}
+
+header .top-panel > .cart {
+  display: flex;
+  height: auto;
+  align-items: center;
+  font-weight: 300;
+  order: 20;
+}
+
+header .top-panel > .cart > button {
+  padding: 0;
+  width: 45px;
+  height: 45px;
+}
+
+header .top-panel > .cart > button > img {
+  margin: auto auto;
+}
+
+header .top-panel > .cart > div {
+  margin-left: 12px;
+  text-align: left;
+}
+
+header .top-panel > .call {
+  text-align: right;
+  font-weight: 300;
+  font-size: 10px;
+  order: 25;
+}
+
+header .top-panel > .call > button {
+  font-size: 10px;
+  padding: 0px 17px;
+  margin: 0 0 4px auto;
+}
+
+header nav {
+  padding-top: 14px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+header nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header nav > ul a {
+  text-transform: uppercase;
+}
+
+header nav > ul a > hr {
+  visibility: hidden;
+  width: 0%;
+  transition: all 500ms;
+}
+
+header nav > ul a:hover > hr {
+  width: 100%;
+  visibility: visible;
+}
+
+
+
+/* Первый экран */
+
+#first .main-block {
+  padding: 94px 0 136px 70px;
+  color: #295200;
+  text-align: left;
+}
+
+#first .main-block h1 {
+  text-transform: none;
+}
+
+#first .main-block span {
+  font-weight: 400;
+}
+
+#first .main-block > p {
+  margin-top: 38px;
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#first .main-block > div {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+#first .main-block button {
+  float: left;
+  width: 288px;
+  padding: 25px 15px;
+  text-shadow: 0px 4px 4px rgba(78, 51, 153, 0.5);
+  margin-right: 21px;
+  margin-top: 20px;
+}
+
+#first .main-block button:last-child {
+  box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.25), 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+#first .main-block button:last-child:hover {
+  box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.25), 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+#first > .figure {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 28px;
+  right: 0;
+  z-index: -2;
+}
+
+#first > .figure > img.shape-full {
+  display: none;
+}
+
+#first > .figure > img.polycarbonate {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  z-index: 1;
+}
+
+
+
+/* Оставить заявку */
+
+#application {
+  text-align: center;
+  padding: 60px 0;
+}
+
+#application h1 {
+  margin-bottom: 40px;
+}
+
+#application h2 {
+  margin: 0;
+}
+
+#application button {
+  text-transform: none;
+  color: #295200;
+  height: 100%;
+}
+
+#application .white-button {
+  box-shadow: none;
+}
+
+#application form {
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  box-shadow: 0px 4px 4px rgba(115, 193, 68, 0.6);
+  border-radius: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  z-index: 1;
+  background: #fff;
+  justify-content: center;
+}
+
+#application form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 141px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+#application form > div > .label {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#application form > div > div:last-child {
+  height: 63px;
+}
+
+#application form > div > div:last-child button {
+  margin-right: 20px;
+}
+
+#application .dropdown > div {
+  border-radius: 31.5px;
+}
+
+#application .dropdown > button:hover,
+#application .toggle:hover,
+#application .white-button-symbol > button:hover {
+  background: #f0f0f0;
+}
+
+#application .dropdown > div > button {
+  height:auto;
+}
+
+#application form .special {
+  display: flex;
+}
+
+#application form .special > div {
+  margin-right: 40px;
+}
+
+#application form > .summary {
+  display: block;
+  margin: 0;
+  margin: 45px 0 38px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#application form > .summary > b {
+  margin: 0 40px;
+  font-weight: 800;
+}
+
+#application form > button {
+  color: #fff;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+#application > img {
+  position: absolute;
+  width: 543;
+  height: 387;
+  left: 120px;
+  top: 84px;
+  z-index: -1;
+  transform: rotate(-210deg);
+}
+
+
+
+/* Каталог */
+
+#catalog {
+  padding: 70px 0 40px;
+}
+
+#catalog .buttons {
+  display: inline-flex;
+  width: auto;
+  margin: auto;
+  margin-top: 44px;
+  margin-bottom: 90px;
+}
+
+#catalog .buttons button {
+  margin-right: 70px;
+  width: 288px;
+  text-transform: none;
+}
+
+#catalog .buttons button:last-child {
+  margin-right: 0;
+}
+
+#catalog .catalog {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 60px;
+  margin-bottom: 53px;
+}
+
+#catalog .catalog > button.arrow {
+  position: absolute;
+  top: 45%;
+  background: transparent;
+  opacity: 0.8;
+  transition: opacity 500ms;
+}
+
+#catalog .catalog > button.arrow:hover {
+  opacity: 0.9;
+}
+
+#catalog .catalog > button.arrow:active {
+  opacity: 1;
+}
+
+#catalog .catalog > button.left {
+  left: -100px;
+}
+
+#catalog .catalog > button.right {
+  right: -100px;
+  transform: rotate(180deg);
+}
+
+#catalog .catalog > div {
+  min-width: 305px;
+  margin-top: 32px;
+}
+
+#catalog > button {
+  display: block;
+  margin: auto;
+}
+
+
+
+/* Популярные товары */
+
+#popular {
+  padding: 24px 0 50px;
+}
+
+#popular b {
+  font-weight: 700;
+}
+
+#popular .popular-list {
+  margin: 40px 60px 45px;
+  display: flex;
+}
+
+#popular .card {
+  padding: 0 17px;
+}
+
+#popular > button {
+  display: block;
+  margin: auto;
+}
+
+
+
+/* Тяжело сделать выбор */
+
+#choice .content {
+  padding: 50px 18% 355px;
+  font-size: 25px;
+}
+
+#choice .helpers {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+#choice .helpers > div {
+  width: 50%;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 800;
+  color: #295200;
+  text-shadow: 4px 4px 10px rgba(73, 145, 0, 0.8);
+}
+
+#choice .helpers > div:last-child {
+  text-align: right;
+}
+
+#choice .helpers > div:last-child > button {
+  float: right;
+}
+
+#choice .helpers button {
+  float: left;
+  margin-top: 25px;
+  padding: 20px 36px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#choice > img {
+  position: absolute;
+  z-index: -2;
+}
+
+#choice > img.left-shape {
+  top: 260px;
+  left: 0;
+}
+
+#choice > img.left-person {
+  top: 285px;
+  left: 0.5%;
+  z-index: -1;
+}
+
+#choice > img.right-shape {
+  top: 275px;
+  right: 0;
+}
+
+#choice > img.right-person {
+  top: 293px;
+  right: 3%;
+  z-index: -1;
+}
+
+#choice .popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+#choice form {
+  margin: auto;
+  padding: 44px 80px;
+  width: 500px;
+  height: auto;
+  margin-top: 5%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(73, 145, 0, 0.5);
+  border-radius: 60px;
+  text-align: center;
+  color: #295200;
+}
+
+#choice form > h2 {
+  color: #295200;
+}
+
+#choice form > * {
+  display: block;
+  margin: auto;
+}
+
+#choice form > p {
+  margin-bottom: 30px;
+}
+
+#choice form > .agreement {
+  display: flex;
+  width: 90%;
+  margin: 12px auto 6px;
+}
+
+#choice form > .agreement > input {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+#choice form > .agreement > label {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+#choice form > label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 6px 0;
+}
+
+#choice form > input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: #C4C4C4;
+  border-radius: 30px;
+}
+
+#choice form > input.big {
+  height: 96px;
+}
+
+#choice form > img {
+  margin-bottom: 12px;
+}
+
+#choice form > button {
+  margin: auto;
+  padding: 7px 30px;
+}
+
+
+
+/* О нашей компании */
+
+#about .about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about .about .text {
+  width: 52%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+#about .about .figure-border {
+  width: 342px;
+  height: 342px;
+  border-radius: 100vmax;
+  padding: 5px;
+  background: linear-gradient(90.51deg, #8FE65B 0.5%, #295200 99.62%);
+}
+
+#about .about .figure-border .figure {
+  position: relative;
+  width: 332px;
+  height: 332px;
+  border-radius: 100vmax;
+  background-color: #fff;
+}
+
+#about .about .figure-border .figure img {
+  position: absolute;
+  left: 45%;
+  top: 42%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 500ms;
+}
+
+#about .about .figure-border .figure img:hover {
+  transform: scale(1.1) translateX(-45%) translateY(-45%);
+}
+
+
+
+/* Каковы наши преимущества */
+
+#advantages .container {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+#advantages h1 {
+  margin: 60px 0 70px;
+}
+
+#advantages .advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#advantages .advantages > div {
+  width: 340px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+#advantages .advantages > div > .advantage {
+  width: 90%;
+  margin: auto;
+  transition: transform 500ms;
+}
+
+#advantages .advantages > div > .advantage:hover {
+  transform: scale(1.1);
+}
+
+#advantages .advantages > div > .advantage > .img {
+  display: inline-block;
+  margin: auto;
+  width: auto;
+}
+
+#advantages .buttons {
+  display: inline-flex;
+  width: auto;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+#advantages .buttons button {
+  margin-right: 70px;
+  width: 288px;
+}
+
+#advantages .buttons button:last-child {
+  margin-right: 0;
+}
+
+#advantages > img {
+  position: absolute;
+  overflow: hidden;
+  top: 90px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: -1;
+}
+
+
+
+/* Прайс-лист */
+
+#price-list h1 {
+  margin-bottom: 70px;
+}
+
+#price-list b {
+  font-weight: 700;
+}
+
+#price-list .container {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+#price-list .content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#price-list .content .figure {
+  position: relative;
+}
+
+#price-list .content .figure img:last-child {
+  position: absolute;
+  top: 18px;
+  left: 40px;
+  transition: transform 500ms;
+}
+
+#price-list .content .figure img:last-child:hover {
+  transform: scale(1.1);
+}
+
+#price-list .content .text {
+  width: 55%;
+}
+
+#price-list p {
+  margin-bottom: 30px;
+}
+
+#price-list button {
+  width: 288px;
+  height: 63px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#price-list button.white-button {
+  padding: 8px;
+}
+
+
+
+/* Футер */
+
+footer > .gradient {
+  height: 121px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(73, 145, 0, 0.05) 38.23%, #75BB2C 100%);
+}
+
+footer > .container {
+  height: 281px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background: #75BB2C;
+  color: #fff;
+}
+
+footer > .container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > .container .right {
+  text-align: right;
+}
+
+footer > .container > p {
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1400px) {
+  #first > img {
+    transform: scale(0.75) translateX(15%);
+  }
+  .container {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #first > img {
+    transform: scale(0.6) translateX(35%);
+  }
+  .container {
+    padding: 0 70px;
+  }
+
+  #choice > img.left-person {
+    transform: scale(0.8) translateX(-15%);
+  }
+
+  #choice > img.right-person {
+    transform: scale(0.8) translateX(15%);
+  }
+
+  #advantages .advantages > div {
+    width: 300px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 80px;
+  }
+
+  header .top-panel > .call {
+    display: none;
+  }
+
+  #first .main-block > div {
+    flex-direction: column;
+  }
+
+  #first > img {
+    transform: translateY(25%);
+  }
+
+  #choice > img.left-shape {
+    transform: scale(0.8) translateX(-20%);
+  }
+
+  #choice > img.right-shape {
+    transform: scale(0.8) translateX(20%);
+  }
+}
+
+@media (max-width: 980px) {
+
+  header {
+    overflow: visible;
+  }
+
+  header .top-panel > .burger {
+    display: block;
+  }
+
+  header .top-panel > .cart {
+    order: 2;
+  }
+
+  header .top-panel > .catalog {
+    margin-top: 40px;
+    margin-left: 150px;
+  }
+
+  header .top-panel > .search-bar {
+    margin-top: 40px;
+    margin-right: 150px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #first {
+    padding-bottom: 100px;
+  }
+
+  #first .main-block {
+    text-align: center;
+    width: auto;
+    margin: auto;
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  #first .main-block > div {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #first .main-block > div > button {
+    margin: 0;
+    float: none;
+    width: 45%;
+    padding: 11px 0;
+  }
+
+  #first > .figure {
+    position: relative;
+  }
+
+  #first > .figure > img.shape {
+    display: none;
+    height: auto;
+  }
+
+  #first > .figure > img.shape-full {
+    display: block;
+    margin: auto;
+  }
+
+  #first > .figure > img.polycarbonate {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scale(0.9);
+  }
+
+  #choice .content {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding: 50px 5% 450px;
+  }
+
+  #choice > img.left-person {
+    transform: scale(0.8) translateY(40%) translateX(-20%);
+  }
+
+  #choice > img.right-person {
+    transform: scale(0.8) translateY(40%) translateX(20%);
+  }
+
+  #choice > img.left-shape {
+    transform: scale(0.8) translateY(40%) translateX(-20%);
+  }
+
+  #choice > img.right-shape {
+    transform: scale(0.8) translateY(40%) translateX(20%);
+  }
+
+  #catalog .catalog {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  #catalog .catalog > button.left {
+    left: -70px;
+  }
+
+  #catalog .catalog > button.right {
+    right: -70px;
+  }
+
+  #catalog .catalog > div {
+    min-width: 260px;
+  }
+
+  .card {
+    width: 210px;
+    font-size: 0.99rem;
+  }
+
+  .card > div > img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  header .search-bar {
+    display: none;
+  }
+
+  #first .main-block {
+    padding-top: 40px;
+  }
+
+  #first > img {
+    transform: scale(0.8) translateX(20%) translateY(20%);
+  }
+
+  footer .left {
+    width: 256px;
+    height: 32px;
+  }
+
+  #about .figure-border, #price-list .figure {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 700px) {
+  #first .main-block {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  #first > img {
+    transform: scale(0.7) translateX(30%) translateY(30%);
+  }
+
+  #about {
+    font-size: 0.95rem;
+  }
+
+  #price-list {
+    font-size: 0.95rem;
+  }
+
+  #choice > img.left-person {
+    transform: scale(0.6) translateY(50%) translateX(-40%);
+  }
+
+  #choice > img.right-person {
+    transform: scale(0.6) translateY(50%) translateX(40%);
+  }
+
+  #choice > img.left-shape {
+    transform: scale(0.6) translateY(50%) translateX(-40%);
+  }
+
+  #choice > img.right-shape {
+    transform: scale(0.6) translateY(50%) translateX(40%);
+  }
+}
+
+@media (max-width: 600px) {
+  header .catalog {
+    display: none;
+  }
+
+  header nav > ul {
+    flex-wrap: wrap;
+  }
+
+  header nav > ul > li {
+    min-width: 120px;
+  }
+
+  #first > img {
+    transform: scale(0.6) translateX(50%) translateY(10%);
+  }
+
+  #catalog .buttons {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 90%
+  }
+
+  #catalog .buttons > button {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #catalog .buttons > button:last-child {
+    margin-right: auto;
+  }
+
+  #catalog .catalog > div {
+    min-width: 200px;
+  }
+
+  .card {
+    width: 180px;
+    font-size: 0.99rem;
+  }
+
+  #popular .card {
+    height: 200px;
+  }
+
+  #about .about .text {
+    text-align: center;
+  }
+
+  #about .figure-border, #price-list .figure {
+    display:none;
+  }
+
+  #about .about .text {
+    margin: 0;
+  }
+
+  #choice .content {
+    padding-bottom: 0;
+  }
+
+  #choice .helpers {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #choice .helpers > div {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  #choice > img.left-person {
+    transform: scale(0.6) translateY(70%) translateX(-50%);
+  }
+
+  #choice > img.right-person {
+    transform: scale(0.6) translateX(40%);
+  }
+
+  #choice > img.left-shape {
+    transform: scale(0.6) translateY(70%) translateX(-50%);
+  }
+
+  #choice > img.right-shape {
+    transform: scale(0.6) translateX(40%);
+  }
+
+  #advantages .buttons {
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  #advantages .buttons > button {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  #price-list button {
+    padding: 7px;
+  }
+
+  footer > .container {
+    height: auto;
+  }
+
+  footer > .container > div {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer > .container > div > img {
+    width: 320px;
+    height: 41px;
+  }
+
+  footer > .container .right {
+    text-align: center;
+  }
+
+  footer > .container > div > * {
+    min-width: 320px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  #first > img.shape, #first > img.polycarbonate {
+    display: none;
+  }
+
+  #popular .popular-list {
+    flex-direction: column;
+  }
+
+  #popular .popular-list > div {
+    margin-bottom: 20px;
+  }
+
+  #choice > img.left-person {
+    display: none;
+  }
+
+  #choice > img.right-person {
+    display: none;
+  }
+
+  #choice > img.left-shape {
+    transform: scale(0.6) translateY(90%) translateX(-50%);
+  }
+
+  #choice > img.right-shape {
+    transform: scale(0.6) translateX(40%);
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 35px;
+  }
+  .toggle {
+    width: 340px;
+    font-size: 15px;
+  }
+  header .top-panel > .cart > .cart-info {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  header nav > ul {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  #first .main-block button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  #application form h2 {
+    font-size: 18px;
+  }
+
+  #application form button, #application .dropdown {
+    width: 220px;
+  }
+}
+
