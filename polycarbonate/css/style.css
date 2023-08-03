@@ -192,7 +192,7 @@ h2 {
 
 .toggle > label {
   display: inline-block;
-  height: 100%;
+  /*height: 100%;*/
   padding: 20px;
   width: 49%;
   transition: color 250ms;

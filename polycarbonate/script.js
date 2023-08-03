@@ -69,7 +69,7 @@ function addSize () {
   let sizeDiv = document.createElement("div");
   sizeDiv.className = "size";
   lastGroup++;
-  sizeDiv.innerHTML = '<h2>Группа листов ' + lastGroup + ':</h2>\
+  sizeDiv.innerHTML = '<h2>Група листів ' + lastGroup + ':</h2>\
   <button type=button onclick="removeSize(this);"><img src="img/close.svg" alt="Удалить" width=32 height=32></button>\
   <div class="size-fields">\
     <div>\
@@ -77,11 +77,11 @@ function addSize () {
       <input type="text">\
     </div>\
     <div>\
-      <h3>Длина</h3>\
+      <h3>Довжина</h3>\
       <input type="text">\
     </div>\
     <div>\
-      <h3>Количество</h3>\
+      <h3>Кількість</h3>\
       <input type="text">\
     </div>\
   </div>';
@@ -93,6 +93,6 @@ function removeSize (el) {
   el.parentElement.remove();
   let elements = document.querySelectorAll("#application form > .size");
   for (let i = 0; i < elements.length; i++) {
-    elements[i].firstElementChild.innerText = "Группа листов " + (i + 1) + ":";
+    elements[i].firstElementChild.innerText = "Група листів " + (i + 1) + ":";
   }
 }
