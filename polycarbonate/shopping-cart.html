@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap" rel="stylesheet">
-  <title>Каталог - Сотовый поликарбонат</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <title>GTConcept - Монтаж та різка полікарбонату. Гурт та роздріб</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-cart.css">
   <script src="script.js" async></script>
 </head>
 <body>
@@ -16,14 +15,14 @@
     <div class="container">
       <div class="top-panel">
         <div class="logo">
-          <img src="img/logo.png" alt="ПОЛИК МОНТАЖ">
+          <img src="img/logo.png" alt="GTConcept">
           <div>
             <div class="installation">
-              Монтаж и резка<br>поликарбоната
+              Монтаж та різка<br>полікарбонату
             </div>
             <hr>
             <div class="clarification">
-              Опт и розница
+              Гурт та роздріб
             </div>
           </div>
         </div>
@@ -34,60 +33,60 @@
             </div>
           </button>
           <div>
-            <a href="#">Главная</a>
-            <a href="#">О нас</a>
-            <a href="#">Услуги</a>
+            <a href="#">Головна</a>
+            <a href="#">Про нас</a>
+            <a href="#">Послуги</a>
             <a href="#">Прайс-лист</a>
-            <a href="#">Скидки</a>
+            <a href="#">Знижки</a>
             <a href="#">Доставка</a>
-            <a href="#">Заказ</a>
+            <a href="#">Замовлення</a>
           </div>
         </div>
-        <button class="catalog green-button button-text-img rounded">
+        <button class="catalog green-button button-text-img rounded" onclick="window.location.href='catalog.html'">
           <div>Каталог</div>
-          <img src="img/icon-details.png" alt="Детали">
+          <img src="img/icon-details.png" alt="Деталі">
         </button>
-        <input class="search-bar circled" placeholder="Найти  🔍">
+        <input class="search-bar circled" placeholder="Знайти  🔍">
         <div class="cart">
-          <button class="green-button circled">
+          <button class="green-button circled" onclick="location.href='shopping-cart.html'">
             <img src="img/icon-shopping.png" alt="Корзина">
           </button>
           <div class="cart-info">
-            <p>В корзине <b>0 товаров</b></p>
-            <p>Сумма: <b>0 грн</b></p>
+            <p>В корзині <b>0 товарів</b></p>
+            <p>Сума: <b>0 грн</b></p>
           </div>
         </div>
         <div class="call">
           <button class="green-button button-text-img rounded">
-            <div>Позвонить</div>
-            <img src="img/icon-phone.png" alt="Детали">
+            <div>Подзвонити</div>
+            <img src="img/icon-phone.png" alt="Деталі">
           </button>
-          <b>zakaz@polik.com</b>
-          <p>г. Харьков, ул. Шевченка д. 9А</p>
+          <b>sales@gtconcept.com.ua</b>
+          <p>м. Харків, вул. Клочковська 192-А, оф. 308</p>
         </div>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Главная<hr></a></li>
-          <li><a href="#">О нас<hr></a></li>
-          <li><a href="#">Услуги<hr></a></li>
-          <li><a href="#">Прайс-лист<hr></a></li>
-          <li><a href="#">Скидки<hr></a></li>
-          <li><a href="#">Доставка<hr></a></li>
-          <li><a href="#">Заказ<hr></a></li>
+          <li><a href="index.html">Головна<hr></a></li>
+          <li><a href="#">Про нас<hr></a></li>
+          <li><a href="#">Послуги<hr></a></li>
+          <li><a href="catalog.html">Прайс-лист<hr></a></li>
+          <li><a href="#">Знижки<hr></a></li>
+          <li><a href="delivery.html">Доставка<hr></a></li>
+          <li><a href="shopping-cart.html">Замовлення<hr></a></li>
         </ul>
       </nav>
     </div>
   </header>
   <section id="cart">
-    <h1>Корзина</h1>
+    <h1>Кошик</h1>
     <div class="items">
       <div>
         <div class="img">
           <img src="img/catalog-item-1.png" alt="">
         </div>
         <div class="price">
-          00 000 грн
+          2 000 грн
         </div>
       </div>
       <div>
@@ -95,7 +94,7 @@
           <img src="img/catalog-item-2.png" alt="">
         </div>
         <div class="price">
-          00 000 грн
+          11 000 грн
         </div>
       </div>
       <div>
@@ -103,17 +102,17 @@
           <img src="img/catalog-item-3.png" alt="">
         </div>
         <div class="price">
-          00 000 грн
+          3 000 грн
         </div>
       </div>
     </div>
-    <p>ВСЕГО: <b>00 000 грн</b></p>
+    <p>ВСЬОГО: <b>15 000 грн</b></p>
     <button class="green-button circled">
-      Оформить заказ
+      Оформити замовлення
     </button>
     <div class="buttons">
-      <button class="white-button circled">Условия доставки</button>
-      <button class="white-button circled">Условия оплаты</button>
+      <button class="white-button circled">Умови доставки</button>
+      <button class="white-button circled">Умови оплати</button>
     </div>
     <img src="img/shape8.svg" alt="">
   </section>
@@ -122,10 +121,10 @@
     <div class="container">
       <div>
         <img class="left" src="img/paysystems.png" alt="" width=320 height=41>
-        <p class="middle">Все права защищены, 2020<br>ПоликМонтаж</p>
-        <p class="right">г. Харьков, ул. Шевченка д. 9А<br>+38 (050) 348-18-85</p>
+        <p class="middle">Всі права захищені, 2020<br>GTConcept</p>
+        <p class="right">м. Харьків, вул. Клочковська 192-А, оф. 308<br>+38 (057) 781-59-56</p>
       </div>
-      <p>Данный сайт носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой.</p>
+      <p>Данний сайт носить виключно інформаційний характер і ні за яких обставин не є публічною офертою.</p>
     </div>
   </footer>
 </body>
