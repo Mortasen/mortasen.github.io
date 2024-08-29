@@ -1,0 +1,1 @@
+async function t({fetch:o,params:e}){return{id:e.id}}const n=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{n as _,t as l};
